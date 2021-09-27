@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import { Api } from '../src/Api';
 import Header from '../Components/Header/Header';
+import Tabs from '../Components/Tabs/Tabs';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />  
       </Head>
       <Header></Header>
+      <Tabs/>
       
 
 
