@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 
+
 function Tabs() {
     const [toggleState, setToggleState] = useState(1);
   
@@ -9,8 +10,8 @@ function Tabs() {
     };
   
     return (
-      <div className={styles.container}>
-        <div className={styles.bloctabs}>
+      <div className="container">
+        <div className="bloc-tabs">
           <button
             className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
             onClick={() => toggleTab(1)}
