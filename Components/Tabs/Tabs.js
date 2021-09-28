@@ -6,7 +6,7 @@ function Tabs() {
     const [toggleState, setToggleState] = useState(1);
   
     const toggleTab = (index) => {
-      console.log("ta funcionando");
+      console.log("ta funcionando")
       setToggleState(index);
     };
   
@@ -33,7 +33,7 @@ function Tabs() {
               vel voluptatum?
             </p>
           </div>
-
+  
           <div
             className={toggleState === 2 ? "content  active-content" : "content"}
           >
