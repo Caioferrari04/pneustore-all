@@ -2,9 +2,10 @@ import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import { Api } from '../src/Api';
 import Header from '../Components/Header/Header';
-import BasicTabs from '../Components/Tabs/Tabs';
-import MultiActionAreaCard from '../Components/Card/Card';
 import styles from '../styles/Home.module.css';
+import BasicTabs from '../Components/Tabs/Tabs';
+import MultiActionAreaCard from '../Components/Card/Card'
+
 
 export default function Home() {
 
@@ -26,6 +27,8 @@ export default function Home() {
 
     },[]) 
     console.log(data)
+
+
   return (
     <div className={styles.container}>
       <Head>

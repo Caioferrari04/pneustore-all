@@ -1,7 +1,11 @@
-.header{
+.Header{
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     margin: 0;
-    padding: 2rem;
+    padding: 1rem;
+    align-content: center;
+    background-color: rgb(31, 29, 29);
 }
 
 .sac{
@@ -20,84 +24,98 @@
 }
 
 .navbar{
-    display: grid;
-    grid-template-columns: 50vw 30vw 20vw;
-    grid-template-rows: 50% 50%;
-    row-gap: 10px;
-    padding: 1.5rem 3rem;
-    //justify-content: center;
+    width: 100;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    background-color: rgb(10, 10, 10);
 
-    //--------------------------
     .logo{
-        grid-column-start: 0;
         justify-content: center;
+
         img {
             width: 12rem;
+        }
+
+        :hover{
+            cursor: pointer;
         }
     }
     //--------------------------
 
     .user{
+        height: fit-content;
+        justify-self: flex-end;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
 
     .login{
-        grid-column-start: 2;
-        //justify-self: end;
-        color: rgb(44, 41, 41);
         
+        //justify-self: end;
+        color: rgb(231, 225, 225);
+        margin-right: 13px;
         
         img{
-            width: 2rem;
+            width: 1.5rem;
             margin-left: 1.3rem;
         }
     }
 
     .cart{
         display: flex;
-        grid-column-start: 3;
-        justify-content: start;
+        
     
         .icon{
-            width: 2rem;
+            width: 1.5rem;
         }
 
         p{
-            font-size: 13px;
+            font-size: 9px;
             position: relative;
             bottom: 10px;
-            right: 1.3rem;
+            right: 1.1rem;
         }
      }
     }
     //-----------------------------
-
-    .search{
+}
+.search{
+        margin-top: 1rem;
+        align-self: center;
         display: flex;
-        justify-content: start;
-        grid-row-start: 2;
-        grid-column-start: 1;
-        grid-column-end: 3;
+        flex-direction: row;
 
         input{
             width: 70vw;
             border-style: none;
+            border-top-left-radius: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+        }
+        input:focus{
+            outline: none;
         }
 
         .searchIcon{
-            background-color: rgb(236, 228, 228);
-            padding: 0.2rem;
+            background-color: rgb(54, 53, 53);
+            padding: 0.3rem;
             border-left-style: none;
+            border-top-right-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
 
             img{
-                width: 1.5rem;
+                width: 1.2rem;
+            }
+
+            :hover{
+                cursor: pointer;
             }
         }
-        
 
+}
+
+//_____________________TABLETS E TELAS MAIORES______________________________
+
+@media screen and (min-width: 570px){
+
+    .Header{
+        flex-direction: row;
     }
-
 }
