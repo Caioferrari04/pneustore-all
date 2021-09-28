@@ -55,13 +55,13 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        Item One
+        1
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        2
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        3
       </TabPanel>
     </Box>
   );
