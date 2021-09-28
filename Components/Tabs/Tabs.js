@@ -1,41 +1,30 @@
 import { useState } from "react";
-
+import styles from './Tabs.module.scss';
 
 
 function Tabs() {
     const [toggleState, setToggleState] = useState(1);
   
     const toggleTab = (index) => {
+      console.log("ta funcionando");
       setToggleState(index);
     };
   
-    return (
-      <div className="container">
-        <div className="bloc-tabs">
-          <button
-            className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(1)}
-          >
+    return ( 
+      <div className={styles.container}>
+        <div className={styles.bloctabs}>
+          <button className={toggleState === 1 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(1)}>
             Opção 1
           </button>
-          <button
-            className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(2)}
-          >
+          <button className={toggleState === 2 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(2)}>
             Opção 2
           </button>
-          <button
-            className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(3)}
-          >
-            Opção
+          <button className={toggleState === 3 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(3)}>
+            Opção 3
           </button>
         </div>
-  
         <div className="content-tabs">
-          <div
-            className={toggleState === 1 ? "content  active-content" : "content"}
-          >
+          <div className={toggleState === 1 ? "content  active-content" : "content"}>
             <h2>Montagem Móvel</h2>
             <hr />
             <p>
@@ -44,7 +33,7 @@ function Tabs() {
               vel voluptatum?
             </p>
           </div>
-  
+
           <div
             className={toggleState === 2 ? "content  active-content" : "content"}
           >

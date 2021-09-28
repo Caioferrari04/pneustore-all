@@ -1,22 +1,23 @@
 .container {
     display: flex;
+    color: black;
     flex-direction: column;
     position: relative;
-    width: 500px;
-    height: 300px;
+    width: 800px;
+    height: 450px;
     background: #f1f1f1;
     margin: 100px auto 0;
     word-break: break-all;
     border: 1px solid rgba(0, 0, 0, 0.274);
   }
   
-  .bloc-tabs {
-    display: flex;
+  .bloctabs {
+    display: flex; 
   }
   .tabs {
   
     padding: 15px;
-    text-align: center;
+    text-align: center; 
     width: 50%;
     background: rgba(128, 128, 128, 0.075);
     cursor: pointer;
@@ -46,12 +47,6 @@
     background: rgb(88, 147, 241);
   }
   
-  
-  
-  button {
-    border: none;
-    
-  }
   .content-tabs {
     flex-grow : 1;
   }
