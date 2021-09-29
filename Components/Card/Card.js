@@ -5,14 +5,18 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 
+
 export default function MultiActionAreaCard() {
+
+  
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
+          widht="200"
+          image="https://static.pneustore.com.br/medias/sys_master/images/images/h86/h7c/8968879734814/pneu-pirelli-aro-15-scorpion-atr-31x10-5r15-109s-1.jpg"
           alt="pneu qualquer"
         />
         <CardContent>
@@ -20,14 +24,19 @@ export default function MultiActionAreaCard() {
             Modelo do pneu
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            Preço total
+          </Typography>
+          <Typography>
+            id
+          </Typography>
+          <Typography>
+            quantidade
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
+          comprar
         </Button>
       </CardActions>
     </Card>
