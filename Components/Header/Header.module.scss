@@ -28,6 +28,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 
     .logo{
         justify-content: center;
@@ -113,9 +114,80 @@
 
 //_____________________TABLETS E TELAS MAIORES______________________________
 
-@media screen and (min-width: 570px){
+@media screen and (min-width: 600px){
+
+    .navbar{
+        display: flex;
+        .logo{
+            margin: auto; 
+        }
+
+        .user{
+            align-self: flex-end;
+            justify-self: flex-start;
+            max-width: fit-content;
+            
+        }
+    }
+}
+
+//_____________________NAVEGADORES______________________________
+
+@media screen and (min-width: 1154px){
 
     .Header{
-        flex-direction: row;
+        padding: 2rem;
+    }
+
+    .navbar{
+        display: grid;
+        grid-template-columns: 20% 50% 10%;
+        justify-content: space-around;
+        align-items: center;
+
+        .logo{
+
+            img{
+                width: 15rem;
+            }
+        }
+
+        .user{
+            grid-column-start: 3;
+            justify-self: end;
+            align-items: center;
+
+            .login{
+                img{
+                    width: 2.2rem;
+                }
+            }
+
+            .cart{
+                .icon{
+                    width: 2.2rem;
+                }
+
+                p{
+                    font-size: 14px;
+                    position: relative;
+                    bottom: 14px;
+                    right: 1.5rem;
+                }
+            }
+            
+        }
+
+        .search{
+            align-self: center;
+            grid-column-start: 2;
+            margin-top: -3rem;
+
+            input{
+                height: 6vh;
+            }
+
+            
+        }
     }
 }

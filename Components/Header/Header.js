@@ -20,13 +20,15 @@ export default function Header(){
                         <p><strong>2</strong></p>
                     </div>
                 </div>
-            </div>
-            <div className={styles.search}>
+                <div className={styles.search}>
                     <input type= "text" placeholder='  Pesquise por marca e medida. exemplo(175/65)'></input>
                     <div className={styles.searchIcon}>
                         <img src="search.png" className={styles.icon} alt="botao de pesquisa"/>
                     </div>
-            </div>    
+                </div>  
+            </div>
+              
         </div>  
+        
     )
 }

@@ -40,10 +40,6 @@ export default function Home() {
       <MultiActionAreaCard/>
       <BasicTabs/>
     
-      
-
-
-     
     </div>
     
   )
