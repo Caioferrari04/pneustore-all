@@ -17,8 +17,6 @@ export default function Card(){
   );
 }
 
-
-
 // import * as React from 'react';
 // import styles from './Card.module.scss';
 // import Card from '@mui/material/Card';

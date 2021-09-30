@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 import { Api } from '../src/Api';
 import Header from '../Components/Header/Header';
 import styles from '../styles/Home.module.css';
-import BasicTabs from '../Components/Tabs/Tabs';
-import Card from '../Components/Card/Card'
+import Card from '../Components/Card/Card';
+import Tabs from '../Components/Tabs/Tabs';
 
 
 
@@ -39,8 +39,7 @@ export default function Home() {
       </Head>
       <Header></Header>
       <Card/>
-      <BasicTabs/>
-    
+      <Tabs/>
     </div>
     
   )
