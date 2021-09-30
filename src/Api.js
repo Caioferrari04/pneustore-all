@@ -1,10 +1,10 @@
 export const Api = {
 
-    baseUrl: 'https://pneustoreapi.azurewebsites.net/Product',
+    baseUrl: 'https://pneustoreapi.azurewebsites.net',
 
 
     
-    readAllUrl: () => Api.baseUrl + '/',
+    readAllUrl: () => Api.baseUrl + '/Product',
 
 
     buildApiGetRequest: url => {
