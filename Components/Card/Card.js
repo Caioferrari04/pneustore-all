@@ -1,23 +1,25 @@
+import { useEffect } from 'react';
 import styles from './Card.module.scss';
 
-export default function Card(){
+function Card(props){
+  
+  console.log(props[1])
+  const produto= props.item
+
+
   return(
     <div className={styles.row}>
       <div className={styles.card}>
-        <img className={styles.img}src="https://static.pneustore.com.br/medias/sys_master/images/images/h86/h7c/8968879734814/pneu-pirelli-aro-15-scorpion-atr-31x10-5r15-109s-1.jpg" alt="pneu"/>
-          <div className={styles.info}>
-            <p>Pneu Pirelli Aro 15 Scorpion ATR 31X10.5R15</p>
-            <h2>Preço Total</h2>
-            <h3>id</h3>
-            <img src="https://www.pneustore.com.br/medias/sys_master/images/images/hc9/he5/9021183950878/mini-banner-pneustore-pirelli.svg" alt="fabricante"/>
-            <h3>$</h3>
-          </div>
+        <div className={styles.info}>
+          <img>{item.imagemUrl}</img>
+        </div>
+         
       </div>
     </div>
   );
 }
 
-
+export default Card
 
 // import * as React from 'react';
 // import styles from './Card.module.scss';
