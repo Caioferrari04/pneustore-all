@@ -1,25 +1,38 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './Card.module.scss';
+import Image from 'next/image';
+import { Api } from '../../src/Api';
 
-function Card(props){
+export default function Card(props){
   
-  console.log(props[1])
-  const produto= props.item
-
+  console.log(props)
+  const produto = props[1]
 
   return(
-    <div className={styles.row}>
-      <div className={styles.card}>
-        <div className={styles.info}>
-          <img>{item.imagemUrl}</img>
-        </div>
-         
-      </div>
-    </div>
-  );
+
+        <>
+          {
+            produto ? 
+            <div className={styles.row}>
+              <div className={styles.card}>
+                <div className={styles.info}>
+                  <img src={produto.imagemUrl}/>
+                  <h2>{produto.nome}</h2>
+                  <h3>{produto.preco}</h3>
+                  <img src={produto.imagemUrlMarca}/>
+
+                </div>
+              </div>
+            </div>
+            : null
+          }
+        </>
+  )
 }
 
-export default Card
+
+
+
 
 
 

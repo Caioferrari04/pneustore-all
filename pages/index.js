@@ -27,7 +27,7 @@ export default function Home() {
         fetchAPi();
 
     },[]) 
-    console.log(data)
+    // console.log(data)
 
   return (
     <div className={styles.container}>
@@ -44,3 +44,5 @@ export default function Home() {
     
   )
 }
+
+
