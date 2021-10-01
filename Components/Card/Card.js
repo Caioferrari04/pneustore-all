@@ -30,12 +30,15 @@ export default function Card(props){
   )
 }
 
+<<<<<<< HEAD
 
 
 
 
 
 
+=======
+>>>>>>> adf3b78f58f7152a070f0c31586bc5d2b1bc1526
 // import * as React from 'react';
 // import styles from './Card.module.scss';
 // import Card from '@mui/material/Card';

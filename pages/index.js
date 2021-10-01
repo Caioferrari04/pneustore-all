@@ -3,8 +3,13 @@ import { useState, useEffect } from 'react';
 import { Api } from '../src/Api';
 import Header from '../Components/Header/Header';
 import styles from '../styles/Home.module.css';
+<<<<<<< HEAD
 import BasicTabs from '../Components/Tabs/Tabs';
 import Card from '../Components/Card/Card';
+=======
+import Card from '../Components/Card/Card';
+import Tabs from '../Components/Tabs/Tabs';
+>>>>>>> adf3b78f58f7152a070f0c31586bc5d2b1bc1526
 
 
 
@@ -37,9 +42,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />  
       </Head>
       <Header></Header>
+<<<<<<< HEAD
       <Card {...data.results}/>
       <BasicTabs/>
     
+=======
+      <Card/>
+      <Tabs/>
+>>>>>>> adf3b78f58f7152a070f0c31586bc5d2b1bc1526
     </div>
     
   )
