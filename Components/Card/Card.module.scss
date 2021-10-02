@@ -1,27 +1,38 @@
-.row{
-    display: flex;
-    align-items: center;
-}
-
 .card{
+    display: flex;
+    width: 30rem;
+    margin-top: 20px;
+    font-size: 15px;
+    align-items: center;
     border-radius: 5px;
     box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
-    color: black;
-    margin-top: 20px;
-    width: 600px;
-    height:300px; 
-    font-size: 15px;
+    background-color: rgb(46, 44, 44);  
 }
 
-.img{
-    display: flex;
-    width: 12rem;
-
+.imagem{
+    width: fit-content;
+    
+    img{
+        width: 13rem;
+    }
 }
 
 .info{
-    display: flex;
+    margin-left: 0.5rem;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
+    h2{
+        font-size: 15px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    img{
+        margin: auto;
+        width: 4rem;
+    }
 }

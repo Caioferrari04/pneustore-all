@@ -39,12 +39,6 @@ export default function Home() {
       <Header></Header>
       <Card {...data.results}/>
       <Tabs/>
-    
-
-
-
-
-
     </div>
     
   )
