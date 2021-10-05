@@ -16,8 +16,10 @@ export default function Header(){
                         
                     </div>
                     <div className={styles.cart}>
-                        <img src="cart.png" className={styles.icon} alt="carrinho de compras"/>
-                        <p><strong>2</strong></p>
+                        <div className={styles.buy}>
+                            <strong>2</strong>
+                        </div> 
+                        <img src="cart.png" className={styles.icon} alt="carrinho de compras"/>            
                     </div>
                 </div>
                 <div className={styles.search}>
